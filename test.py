@@ -1,0 +1,1 @@
+print('sixninesix'.rfind('six'))
