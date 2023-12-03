@@ -29,7 +29,7 @@ def letter5(inp: str, direction: bool):
         index_word = -1
         for num in numbers.keys():
             if num in inp:
-                index = inp.find(num)
+                index = inp.rfind(num)
                 if (index > index_word):
                     index_word = index
                     word = num
