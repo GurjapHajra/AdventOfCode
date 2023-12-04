@@ -1,1 +1,1 @@
-print('sixninesix'.rfind('six'))
+print('123'.isnumeric())
