@@ -1,1 +1,1 @@
-print('123'.isnumeric())
+print('123.'.isnumeric())
