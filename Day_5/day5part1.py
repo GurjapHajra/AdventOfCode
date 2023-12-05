@@ -95,8 +95,17 @@ def seedToLoci(seed: int):
 
 res = []
 
+dic = {}
+
 for seed in range(0,len(seeds),2):
   for x in range(seeds[seed],seeds[seed]+seeds[seed+1]):
-    res.append(seedToLoci(x))
+    if(x in dic):
+      print("i like hashmap")
+      res.append(dic.get(x))
+    else:
+      y = seedToLoci(x)
+      dic.update({x:y})
+      res.append(y)
+  print("progress: ", seed+1,'/',20)
 
 print(min(res))
